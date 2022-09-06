@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IlkUygulamam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim" translatesAutoresizingMaskIntoConstraints="NO" id="d6g-MH-Utz">
+                                <rect key="frame" x="33" y="172" width="348" height="224"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEJ-rD-Jnb">
+                                <rect key="frame" x="48" y="462" width="144" height="67"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Degistir"/>
+                                <connections>
+                                    <action selector="buttonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XmO-KT-e5s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Istanbul Tarihi Yarımada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cw0-Wy-wrz">
+                                <rect key="frame" x="41" y="428" width="273" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LEJ-rD-Jnb" firstAttribute="top" secondItem="d6g-MH-Utz" secondAttribute="bottom" constant="66" id="07z-K7-D68"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LEJ-rD-Jnb" secondAttribute="bottom" constant="333" id="5N5-Kf-Dv4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cw0-Wy-wrz" secondAttribute="trailing" constant="100" id="6Eb-M5-oTj"/>
+                            <constraint firstItem="d6g-MH-Utz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Bhg-dF-jul"/>
+                            <constraint firstItem="LEJ-rD-Jnb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="GeC-LF-lAL"/>
+                            <constraint firstItem="Cw0-Wy-wrz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QBY-6l-doA"/>
+                            <constraint firstItem="d6g-MH-Utz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="QNM-Xr-Dyz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cw0-Wy-wrz" secondAttribute="bottom" constant="394" id="RNk-tl-RBz"/>
+                            <constraint firstItem="d6g-MH-Utz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rg5-Eg-7WU"/>
+                            <constraint firstItem="Cw0-Wy-wrz" firstAttribute="top" secondItem="d6g-MH-Utz" secondAttribute="bottom" constant="32" id="UyV-pn-wjd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LEJ-rD-Jnb" secondAttribute="trailing" constant="222" id="fj5-2W-oQT"/>
+                            <constraint firstItem="Cw0-Wy-wrz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="iPd-hr-y69"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="benimLabel" destination="Cw0-Wy-wrz" id="ARO-No-pbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="resim" width="1600" height="1066"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
